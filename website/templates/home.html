@@ -1,0 +1,120 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+  content %}
+
+  <div class="row">
+    <div class="w-60 mx-auto">
+    <form method="POST">
+      <br>
+      <h3 align="center">Home</h3>
+      <br>
+      <br>
+      <select class="selectpicker mx-3" data-style="btn-success" name="select1">
+        <option value="NO PERSON ENTRY ZONE">NO PERSON ENTRY ZONE</option>
+        <option value="NO VEHICLE ENTRY ZONE">NO VEHICLE ENTRY ZONE</option>
+        <option value="COMPLETE INTRUSION FREE ZONE">COMPLETE INTRUSION FREE ZONE</option>
+     </select>
+     <select class="selectpicker" name="select2" id="video" data-style="btn-success">
+        <option value="webcam" selected="selected">webcam</option>
+        <option value="offline video">offline video</option>
+     </select>
+     <br>
+     <br>
+     <br>
+     <div class="form-check form-check-inline">
+      <label for=" option1 colFormLabelSm" class="col-md-6 col-form-label col-form-label-lr">SAVE</label>
+      <input type="radio" class="mx-3  btn-check" name="options" id="opt1" value=True autocomplete="off" checked />
+      <label class="btn btn-secondary" for="option1">YES</label>
+     </div>
+     <div class="mx-3 form-check form-check-inline">
+      <input type="radio" class="btn-check" name="options" id="opt2" value=False autocomplete="off" />
+        <label class="mx-3 btn btn-secondary" for="option2">NO</label>
+     </div>
+     <br>
+     <br>
+      <div class="form-check form-check-inline">
+        <label for=" option2 colFormLabelSm" class="col-md-5 col-form-label col-form-label-lr">SHOW FPS</label>
+          <input type="radio" class="mx-3 btn-check" name="options2" id="opt3" value=True autocomplete="off" checked />
+          <label class="btn btn-secondary" for="option1">YES</label>
+        
+          <input type="radio" class="mx-3 btn-check" name="options2" id="opt3" value=False autocomplete="off" />
+          <label class="mx-2 btn btn-secondary" for="option2">NO</label>
+      </div>
+      
+     <input type="hidden" name="fl" value={{flag}}></input>
+
+      <input type="hidden" name="fl2" value={{flag2}}></input>
+      <br>
+      <br>
+      <br>
+      <button type="button" class="mx-5 btn btn-primary"  onclick="setEnter()">Enter</button>
+      <br>
+      <br>
+      <br>
+      <input type="hidden" class="form-control" id="localpath" name="localPath" placeholder="Enter the address" />
+      <br>
+      <br>
+      <button type="submit" class="mx-5 btn btn-primary"  onclick="setSubmit()">Submit
+    </form>
+    
+
+    
+     
+    <script type="text/javascript">
+    function getOption() {
+        selectElement = document.querySelector('#select1');
+        output = selectElement.value;
+        
+        
+    }
+    
+    function setSubmit() {
+        selectElement = document.getElementsByName('fl');
+        output = selectElement.val;
+        document.getElementsByName('fl').value = false;
+        
+        
+        
+        
+    }
+    function setEnter() {
+        selectElement = document.getElementsByName('fl2');
+        output = selectElement.val;
+        var e=document.getElementById('video');
+        
+        var value = e.value;
+        var text = e.options[e.selectedIndex].text;
+        console.log(text)
+        if(text==="offline video")
+        {
+        document.getElementsByName('fl2').value = true;
+        var y=document.getElementById('localpath');
+        y.type="text";
+      }
+        
+    }
+    
+
+   
+    
+
+    </script>
+      <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+       ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </form>
+  </div>
+  </div>
+  {% endblock %}
+  
