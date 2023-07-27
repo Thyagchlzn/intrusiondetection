@@ -13,7 +13,7 @@
 
 ## About The Project
 
-![Screen Shot](snap shots/live video using webcam.png)
+![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/live_video_using_webcam.png?raw=True)
 
 The project is a valuable addition to enhance surveillance systems. It  involves real-time video analysis and object detection to identify intrusions within a specified bounding box. 
 1. **Input Sources:** The system supports both live video feeds through USB and pre-recorded videos. This allows users to use different sources for monitoring and analysis.
@@ -58,17 +58,25 @@ git clone https://github.com/Thyagchlzn/intrusiondetection.git
 
 1. Sign in using a mail-id
 <br/>
-![Screen Shot](snap shots/signup page.png)
+
+![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/signup_page.png?raw=True)
+
 
 2. Log in using the main-id
 <br/>
-![Screen Shot](snap shots/login page.png)
+
+![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/login_page.png?raw=True)
+
 
 3. Enter the type of object along with source details
 <br/>
-![Screen Shot](snap shots/getting input from user.png)
+
+![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/getting_input_from_user.png?raw=True)
+
 
 4. If an intrusion occurs ,intruder image will be sent to your e-mail
 <br/>
-![Screen Shot](snap shots/mail notification.jpg)
+
+![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/mail_notification.jpg?raw=True)
+
 
