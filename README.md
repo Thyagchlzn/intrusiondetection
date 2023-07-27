@@ -54,7 +54,7 @@ pip install -r requirements_gpu.txt
 git clone https://github.com/Thyagchlzn/intrusiondetection.git
 ```
 
-### Workflow
+### Working
 
 1. Sign in using a mail-id
 <br/>
@@ -78,5 +78,12 @@ git clone https://github.com/Thyagchlzn/intrusiondetection.git
 <br/>
 
 ![Screen Shot](https://raw.githubusercontent.com/Thyagchlzn/intrusiondetection/main/snapshots/mail_notification.jpg?raw=True)
+
+
+**References:**
+
+* [IEEE Paper](https://r.search.yahoo.com/_ylt=AwrO.pEmhcJkevsM3t1XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZANBREVOR1QyXzEEc2VjA3Ny/RV=2/RE=1690498470/RO=10/RU=https%3a%2f%2fieeexplore.ieee.org%2fabstract%2fdocument%2f9117960/RK=2/RS=G5.cNqApo0vEUOKwuXhkV0YZ1xw-)
+* [Yolov7 implementation](https://github.com/WongKinYiu/yolov7)
+  
 
 
